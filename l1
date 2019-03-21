@@ -1,0 +1,204 @@
+1)id() function in python - to return identity of an object
+2)a=100
+   for i in a:
+   print(i)   -  THROWS ERROR CANT ITERATE NUMBER
+3)x=50
+  def func():
+  global x
+  print(x)
+  func()
+  print(x)   -  50  2  2
+4)return (1,2,3) -tuple
+5)lock the selected records for modification - select... for update of
+6)regular expressions are used for specifying pattern in grep command.
+7)command used to replace string character in vi editor??  'r'
+8)string literal denoted by triple quotes for providing specifications of certain program elements???-Docstring
+9)when column is used frequently with where clause and if colimn contains a wide range of values then indexes are created.
+10)x=['ab','cd']
+  for i in x:
+  i.upper();
+  print(x)
+ANS: ['ab','cd']
+
+MODULE 2
+
+
+1)use of administrator client-create project,set time property,auto purge job log,change defaults
+  exporting environment variablers
+2)restart the sequence job-can be done from director client
+3)null handling-seq,transformer,modifier,odbc
+4)peek stage-
+5)multiple job compile - only compiles multiple jobs
+6)finding bugs in job sequence-director client
+7)dsjob -run projectname jobname
+8)rcp-
+9)partition methods-keyless
+                    keyed
+10)parallelism-pipeline,partitioning
+11)default datatype for calculate aggregate in aggregator stage-double precision floating point
+12)changing datatypes as required - using modifier stage
+13)reject link - to get the rejected data
+14)reject modes in seq file - continue,fail,output
+15)dataset stage-partitions are preserved
+16)execution modes in datastage- parallel,sequential;parallel is default
+17)reading data from a seq file stage having details about customers sorting is done by using sortmerge collection method.
+18)review a job or search a job-advanced find
+19)dsjob -run -mode normal(default) projectname jobname.jobinstancename(instance-which we get after compiling a job)
+20)modes in dsjob command-normal,multi
+21)input column derivations
+   loop variables          ---in transformer stage
+   stage variables
+   output column derivations- last executed
+22)even distribution means similar number of rows for every partition -roundrobin,entire,same,random
+23)degree of parallelism-configuration file
+24)inner join - match the records where the key contains equal values in both the tables
+25)types of lookups - normal,sparse   (to change just change the options from one type to another type)
+26)aggregation types-3
+27)configure job log file - administrator client
+28)authorization of a user - administrator client
+29)creating reusable jobs elements-containers
+30)creating a surrogate key-by using surrogate key stage
+31)import the data from a single column and ouput is more than one column - column import stage
+32)join stage-
+33)splitting the data to different output files-filter,transformer
+34)combining two datasets into one -funnel stage
+35)seq file format tab-two delimiter(field,final)
+36)multiple reject links-merge stage
+37)modify infosphere tool-administrator
+   enable job administration in director client option can be set
+   default partitioning for jobs in desginer client cannot be set in administrator client
+38)handling the metadata for ds job-by using table definitions and schema file
+39)collector methods-roundrobin,sortmerge,auto,ordered
+40)persistent data is stored in - dataset stage
+41)3 scd stages are required-three dim tables,one fact table
+
+
+
+TERADATA:
+
+1)minimum number of amp's can a node have- 4
+2)clique - set of td nodes with fail over capabilities
+3)teradata - shared nothing architecture(disks are not sharable with any other amp's)
+4)PE -optimizing query plan,data is distributed using hash partitioning.
+5)primary index  - for optimizing query processing time
+6)types of tables - volatile,derived,global temp,permanent
+7)set and multi set tables(default set)
+8)joins
+9)unique secondary index - enforces uniqueness on the primary key(increases data retrieval speed,alternate path to access the data)
+10)create table tablename as oldtablename with no data;
+   create table tablename as (select *from oldtablename) with no data;
+11)datamarts,types 
+12)command to see the query plan - explain(table options-fallback(off always-default),journal)
+13)avoiding full table scan - the pi is not defined as compressed
+                              pi is fully qualified
+                              use of where clause---(ans)
+14)data distribution on - primary index
+15)row level locking - tpump
+16)fastload loads to only empty table,  que:when two sources are needed to be loaded into one target table what is the option to do: 
+                                        Ans- write two scripts and don't end the script in the first script.
+17)like '_A%';
+18)macros - group of queries are executed,definition is stored in datadictionary,ends with semicolon
+19)displaying view - show view viewname;
+20)rank and qualify
+21)request for pi-one amp access
+               si-two or all amp access
+22)multiload
+23)help database dbname;
+24)last but one record display - using rownumber and qualify
+25)isnull
+26)active datawarehouse can be declared - using the measure 'freshness'
+27)mload -delete is faster.
+
+
+
+
+REVISION:
+
+MODULE 2:
+
+1)export environment variables - data administrator client
+2)restart with sequence job - director client
+3)null handling - transformer,modify,seq,odbc
+4)multiple job compile option-compiles multiple jobs at a time
+5)datastage director-(uses)
+6)ds job -commandline to run jobs
+7)parallelism-pipeline,partitioning
+8)roundrobin - one after the other sequentially(partitioning algorithm)
+9)reject mode in seq file-reject link
+10)dataset 
+11)sortmerge-collection method(optimal performance without violating the business rules)
+12)reusable activity-shared container
+13)stage allowed to generate surrogate key - surrogate key
+14)same partition takes the previous stage partition
+15)column import stage.
+16)filter
+17)record count property=0 - all rows are returned.
+18)final and field delimiter
+19)merge can have multiple reject links
+20)select the properties which can be done by administrator-enable
+21)job run details specific invocation -
+22)stage variables-cannot be used in o/p column links
+23)compressed minimize storage space -job is not restartable.
+24)head stage
+25)datastage project-
+
+
+
+1)explain stmt
+2)parallel aware optimizer
+3)primary index
+4)like -,%
+5)spool file is used by joins(of anytype)
+6)top n keyword
+7)show view viename
+8)node is h/w and s/w
+9)multi Load does not support usi.
+10)rename-to change the object(renaming the fields)
+11)
+
+
+
+1)fields must have alias name-when loading the data from multiple tables.
+2)range and distribution for groups of numerical data-distribution plot is used
+3)binary load can be used for only one application(restriction on set scripts)-true
+4)scrambling tab-admin mode(present in settings-document properties)
+5)gathering user information-preconceptions
+6)data,sheets,guides-major components of qlik sense
+7)trigger jobs are listed in list box.
+8)waterfall chart in qs-only measures
+9)let vmtd=null and vmtd=empty - to drop a script variable in qlik view
+10)auto number written in load script statement
+11)qmc-publish-stream-ok process to publish a qlik sense app.
+12)combo chart
+13)pivot
+14)colors in qv and qs
+15)distinct key field and distinct column data-changes the datamodel when we use this
+16)ommit-to hide columns
+17)incremental load-can view the records that are newly inserted
+18)report banding-reports can be displayed in diff phases
+19)mekko chart-market analysis
+20)in qs data tables loaded are managed by datamanager-true
+21)long is not allowed in qs
+22)
+23)
+
+
+
+types of parameters -
+dates in unix
+oracle - 4 sql 5 plsql
+tw o cursor open stmt-cursor_already_open
+sqlcode and sqlerrm
+mixed notations(rules)
+which datatype is not allowed in plsql---(long)
+package will have only two entries(specification and body)---even 100 pro and fun
+object--signature  columns
+      --timestamp  time
+
+
+nested and coreleated subquery
+
+orcl11g---g stands for (grid)  i--(internet)
+
+
+
